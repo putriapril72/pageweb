@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body {
+    /* padding:0 13%; */
+    overflow: hidden;
+    font-family: 'Poppins' ;
+    color: #000000;
+}
+.wrap{
+    padding:0 13%;
+}
+.topPage{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .profileIcon {
+    width: 242px;
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Menempatkan gambar di tengah secara horizontal */
+    align-items: center; /* Menempatkan gambar di tengah secara vertikal */
+}
+
+header .profileIcon img {
+    width: 100%; /* Membuat gambar mengisi seluruh lebar elemen */
+    height: 100%; /* Membuat gambar mengisi seluruh tinggi elemen */
+    object-fit: cover; /* Menjaga aspek rasio gambar dan mengisi seluruh area */
+}
+
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.header ul li {
+    list-style: none;
+    font-size: 21px;
+    font-weight: 400;
+    padding: 10px 14px;
+}
+.header ul li a:hover{
+    color: #FD6F00;
+}
+.header ul button:hover{
+    background-color: #ca5b06;
+}
+
+header ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+header button{
+    cursor: pointer;
+    width: 188px;
+    height: 52px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #FD6F00;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.topPage .hero{
+    width: 100%;
+    height: 686px;
+    display: flex;
+    justify-content: space-between;
+}
+.topPage .hero  .heroKiri {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.topPage .hero .intro{
+    width: 714px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.topPage .hero  .heroKiri .p1{
+    font-size: 24px;
+    font-weight: 600;
+}
+.topPage .hero  .heroKiri .p2{
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: #FD6F00;
+}
+
+.hero .heroKiri .title {
+    width: 100%;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100%;
+}
+.hero .heroKiri .title .left{
+    text-align: left;
+    font-size: 100px;
+    font-weight: 700;
+}
+.hero .heroKiri .title .right{
+    font-size: 100px;
+    font-weight: 700;
+    text-align: right;
+}
+.hero .desc{
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.hero .heroKiri button{
+    cursor: pointer;
+    width: 188px;
+    height: 52px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #FD6F00;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.hero .heroKanan{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .aboutRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.judul{
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 100%;
+}
+.desc{
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+.about .aboutRight .skills{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about .aboutRight .ux{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about .aboutRight h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.services {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.description{
+    max-width: 50%;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.services .layanan {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.services .layananItem {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    width: 260px;
+    height: 400px;
+    background-color: #F8F8F8;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+.services .layananItem .title{
+    font-size: 32px;
+    font-weight: 600;
+}
+.services .layananItem .lorem{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.projects{
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.projects .skillSet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.projects .skillSet button{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    outline: none;
+    border: 0.4px solid rgb(211, 207, 207);
+    background-color: #F8F8F8;
+}
+.projects .skillSet button:nth-child(2){
+    background-color: #FD6F00;
+    color: white;
+}
+
+.projects .workspace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.projects .workspace .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    width: 30%;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+}
+
+.testimonial{
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.testimonial .testimonialWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+.testimonial .testimonialBox{
+    width: 1020px;
+    height: 300px;
+    padding: 0 20px;
+    background-color: #F8F8F8;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.testimonial .text{
+    width: 700px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.testimonial .text p{
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #424242;
+}
+.own h3:nth-child(2){
+    font-size: 19px;
+    font-weight: 300;
+}
+.testimonial .blurry{
+    opacity: 20%;
+}
+.testimonial .slideWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonial .slider{
+    background-color: #D9D9D9;
+    width: 57px;
+    height: 16px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.testimonial .slider:nth-child(2){
+    background-color: #FD6F00;
+}
+.subscribe {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.subscribe .subsInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.subscribe input{
+    background-color: #F8F8F8;
+    width: 627px;
+    height: 75px;
+    padding: 0 20px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    border: 1px solid rgb(177, 177, 177);
+    outline: none;
+    color: #797979;
+    font-size: 21px;
+    font-weight: 400;
+}
+.subscribe button{
+    width: 200px;
+    height: 75px;
+    padding: 0 20px;
+    background-color: #FD6F00;
+    padding: 25px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    outline:  none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.footer {
+    height: 480px;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul li {
+    list-style: none;
+    font-size: 21px;
+    font-weight: 400;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+.footer ul li:hover{
+    color:#FD6F00;
+}
+.footer .logo{
+    width: 260px;
+    height: 90px;
+
+}
+.footer .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer .copyright {
+    width: 100%;
+    background-color: #545454;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer .copyright h1{
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+}
+.footer .copyright span{
+    color:#FD6F00;
+}
